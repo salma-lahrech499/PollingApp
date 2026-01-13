@@ -166,6 +166,12 @@ function generateAnonymousUserId(pollId: string, userAgent: string, ip: string):
 **Choice**: Chart modal opens automatically after voting  
 **Reason**: Immediate feedback - users see results right after submitting their vote, enhancing engagement.
 
+### How multiple votes are prevented
+The app prevents multiple votes by assigning a unique identifier (stored in session/local storage) to each user and checking it before allowing a vote on the same poll.
+
+### How anonymous voting is handled
+For anonymous voting, no personal or identifying data is stored. Only the selected option is saved, ensuring votes cannot be traced back to any user.
+
 ## Getting Started
 
 ### Pre-requirements
